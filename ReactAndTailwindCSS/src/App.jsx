@@ -1,14 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Card from './componenet/card'
 
 function App() {
-  
-
+  let myObj = {
+    name : "Kausar",
+    email : "faizraza349@gmail.com"
+  }
   return (
     <>
-    <h1>Kausar Raza Tailwind CSS</h1>
+    <h1 className='text-4xl font-bold text-red-800 mb-8'>Kausar Raza Tailwind CSS</h1>
+    <Card  myname ="https://shorturl.at/gstC6" someOng ={myObj.name}/>
+    <Card myname= "https://shorturl.at/ADGIX" someOng ={myObj.email}/>
     </>
   )
 }
